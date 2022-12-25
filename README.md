@@ -1,7 +1,3 @@
-[TOC]
-
-
-
 # Blindspot resty and rowy framework
 This repository is a part of a test framework still in POC phase.
 
