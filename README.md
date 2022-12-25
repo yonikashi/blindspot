@@ -2,7 +2,7 @@
 This repository is a part of a test framework still in POC phase.
 
 ### Goal
-The goal of this terraform deployment is to install on local kubernetes cluster helm chart: `resty-chart`.
+The goal of this terraform deployment is to install on local kubernetes cluster helm chart: `rowy-chart`.
 The chart is not published yet therfore it is still part of this repository.
 
 ------------
@@ -29,8 +29,9 @@ curl -X POST http://localhost:$LOCAL_PORT/api\?value\=12345
 ```
 
 ### To be done
-- Support deployment on cloud environment (not tested).
-- Create helm release process and seperate to different repo,
+- Support deployment on cloud environment with ingress endpoint (not tested).
+- Create helm release process and seperate to different repo.
 - Create CI process for artifacts so not to build it localy and change pull policy from `Never` to `IfNotPresent`.
 - Add prometheus exporter to resty microservice to fetch response time of requests.
 - Enrich parameters passed to terraform and to helm chart to make it more flexible (change namespace deployment / replicas etc...).
+
